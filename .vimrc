@@ -5,8 +5,8 @@ syntax on
 set number 
 
 " Encoding 
-set-encoding=utf-8
+set encoding=utf-8
 
 " Colors 
 set background=dark
-colorscheme Darkblue
+colorscheme ron 
