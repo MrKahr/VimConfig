@@ -1,3 +1,4 @@
+"---------- GENERAL ----------
 " Syntax Highlighting 
 syntax on
 
@@ -25,3 +26,8 @@ set showmode
 
 " Use highlighting when searching
 set hlsearch
+
+"---------- Mapping ----------
+
+
+"---------- Plugins ----------
