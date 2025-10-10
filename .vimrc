@@ -44,6 +44,9 @@ if has('mouse')
    set mouse=a
 endif
 
+" Vim guesses filetype 
+set filetype on
+
 "---------- Mapping ----------
 " I cannot reach more function keys easily
 :map <F2> :next
@@ -53,4 +56,17 @@ endif
 :map <F6> :last
 :map <F7> :w
 
+"--------- Autocommands -------
+"javascript config 
+augroup javascript
+    autocmd! "remove javascript augroup if already defined
+    autocmd FileType javascript 
+    autocmd FileWritePost *.js make | silent redraw!  "most convinient to run a makefile when you write your changes to file
+augroup END
+
+" quickfix config 
+augroup quickfix 
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow "event triggers whenever quickfix makes changes to the error list e.g. when :make command is triggers
+augroup END
 "---------- Plugins ----------
