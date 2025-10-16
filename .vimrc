@@ -70,3 +70,6 @@ augroup quickfix
     autocmd QuickFixCmdPost [^l]* cwindow "event triggers whenever quickfix makes changes to the error list e.g. when :make command is triggers
 augroup END
 "---------- Plugins ----------
+
+"---------- Currently reading ----------
+https://vimhelp.org/usr_08.txt.html#usr_08.txt
